@@ -18,7 +18,7 @@ for(int i=0;i<7;i++){
 	}
 }
 	cout<<"this is even Num count "<<even<<endl;
-	cout<<"this is even Num count "<< odd<<endl;
+	cout<<"this is odd Num count "<< odd<<endl;
 
 return 0;	
 }
