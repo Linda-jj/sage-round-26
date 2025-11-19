@@ -11,7 +11,7 @@ int main(){
 	}
 for(int i=0;i<7;i++){
 	if(num[i]%2==0){
-	even++;
+	even++;//even=even+1;
 	}
 	else {
 	odd++;	
