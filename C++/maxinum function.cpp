@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
-void maxNum(int x, int y){
+string maxNum(int x, int y){
 	if(x>y){
-	cout<< x;	
+	return to_string(x);	
 	}
 	else if(x==y){
-	 cout<<"Enqual"	;
+	 return "Enqual"	;
 	}
 	else{
-		cout<< y;
+ return to_string(y);
 	}
 }
 
@@ -18,6 +18,6 @@ int main(){
 	cin>>x;
 	cout<<"enter num2 "<<endl;
 	cin>>y;
-	maxNum(x,y);
+	cout<<maxNum(x,y);
 return 0;	
 }
