@@ -6,7 +6,8 @@ int adding(int x,int y){
 	return(x+y);
 }
 int main(){
-int x, y;
+	int x,y;
+	
 	cout<<"Enter you num1 "<<endl;
 	cin>>x;
 	cout<<"Enter you num2 "<<endl;
