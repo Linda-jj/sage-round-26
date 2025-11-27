@@ -33,3 +33,10 @@ while( z<=5){
     console.log(z);
     z++;
 }
+ 
+function changeText(){
+    let title=document.getElementById('title');
+    title.innerText='New Title';
+   
+}
+ console.log(title);
