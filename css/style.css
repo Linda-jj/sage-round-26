@@ -1,7 +1,17 @@
 h1{
-    color: red;
-    background-color: aqua;
-}
-p{
+    color: rgb(10, 10, 10);
+    
 color: greenyellow;
+}
+.title{
+    color: brown;
+}
+#titlewidth{
+    color: aquamarine;
+}
+p ,h6{
+    color: blueviolet;
+}
+div a{
+    background-color: cornflowerblue;
 }
