@@ -1,9 +1,9 @@
-h1{
+h1 {
     background-color: tomato;
-    color:rgba(250,250,0,1);
+    color: rgba(250, 250, 0, 1);
     /* border: 2px solid black; */
     opacity: 1;
-    background-image: url(./download\ -\ 2025-12-02T121200.496.jpg) ;
+    background-image: url(./download\ -\ 2025-12-02T121200.496.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-color: black;
@@ -11,46 +11,58 @@ h1{
     border-style: dotted dashed solid double;
     text-align: center;
     text-decoration: line-through red solid 3px;
-    
+
 }
-p{
+
+.p {
     text-align: justify;
     text-indent: 35px;
     letter-spacing: 5px;
     line-height: 35px;
-    text-shadow: -5px -5px 2px rgb(23, 145, 186),5px 5px 2px red;
+    text-shadow: -5px -5px 2px rgb(23, 145, 186), 5px 5px 2px red;
     background-color: black;
     color: white;
 }
-.div1{
+
+.div1 {
     background-color: orange;
     height: 1000px;
     width: 100px;
     display: inline-block;
     text-align: center;
-    
+    position: relative;
+    top: -10px;
+    left: 20px;
+    z-index: 0;
+
+
+
 }
-.div2{
+
+.div2 {
     background-color: hotpink;
     height: 100px;
     width: 100px;
     display: inline-block;
     text-align: center;
     position: relative;
-    
+
 }
-.div2_1{
+
+.div2_1 {
     background-color: aqua;
-    position:absolute;
+    position: absolute;
     /* top: 30px;
     left:30px;
     */
 }
-.div2_2{
+
+.div2_2 {
     background-color: rgb(255, 136, 0);
-   left: 30px;
+    left: 30px;
 }
-.div3{
+
+.div3 {
     background-color: blue;
     display: inline-block;
     position: fixed;
@@ -58,11 +70,91 @@ p{
     right: 5px;
 
 }
-.div4{
+
+.div4 {
     background-color: rgb(255, 128, 0);
     display: inline-block;
     position: sticky;
     top: 20px;
 
+
+}
+
+.sapcing {
+    border: 3px solid red;
+    background-color: darkslategrey;
+    padding: 10px 30px;
+    margin: 10px;
+    /* width:100px ;
+    height: 30px; */
+    max-width: 200px;
+    min-width: 50px;
+
+}
+
+ul {
+    list-style-type: circle;
+    /* list-style-type: none; */
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+.pseudo:link {
+    color: rgb(221, 132, 15);
+}
+
+.pseudo:visited {
+    color: aquamarine;
+}
+
+.pseudo:hover {
+    color: rgb(16, 15, 15);
+}
+
+.pseudo:active {
+    color: rgb(250, 8, 1);
+}
+
+p:first-child {
+    background-color: blueviolet;
+
+}
+
+p::first-letter {
+    font-size: 30px;
+}
+
+h2::before {
+    content: 'www';
+}
+
+h2::after {
+    content: 'AAA';
+}
+
+h2::selection {
+    background-color: blueviolet;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: brown;
+    }
+
+}
+
+@media screen and (min-width:601px) and (max-width:1000px) {
+    body {
+        background-color: rgb(106, 144, 178);
+    }
+
+}
+
+@media screen and (min-width:1001px) {
+    body {
+        background-color: gold;
+    }
 
 }
