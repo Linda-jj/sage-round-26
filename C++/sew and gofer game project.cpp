@@ -3,40 +3,76 @@
 #include <ctime>
 using namespace std;
 
+int toWin(int user, int comp, int aWin) {
+
+    if (comp == 0){
+     cout << "Computer chose: Gofer"<<endl;	
+	}
+       
+    else if(comp==1){
+        cout << "Computer chose: Sew"<<endl;	
+	}
+    
+
+    if (user == comp){
+    	cout<<"You Draw";
+	}
+    
+    else if (user == aWin){
+    	cout<<"You Win";
+	}
+       
+    else{
+    	cout<<"you Lose";
+	}
+     return 0;   
+}
+
+void toInvalid(int user) {
+    if (user < 0 || user > 1){
+    cout << "Invalid choice!"<<endl;
+	
+	}
+        
+}
+
+void toDraw() {
+	 int user, comp, aWin;
+	if(user==aWin && comp==aWin){
+	   cout << "Result: Draw!"<<endl;	
+	}
+ 
+ 
+}
+
 int main() {
     srand(time(0));
 
-    int user, comp ,aWin;
+    int user, comp, aWin;
 
-    cout << "Sew and Gofer Game\n";
-    cout << "------------------------\n";
-    cout << "0 = Gofer\n1 = Sew\n ";
-    cout << "Enter your a win choice: ";
-    cin >>aWin;
+	cout <<"Welcome to Sew and Gofer game. Please read the below instruction to play!"<<endl;
+    cout << "Sew and Gofer Game"<<endl;
+    cout << "------------------------"<<endl;
+    cout << "0 = Gofer\n1 = Sew\n";
+    cout << "Enter your winning symbol (0 = Gofer, 1 = Sew): ";
+    cin >> aWin;
+
     cout << "Enter your choice: ";
     cin >> user;
 
-    if (user < 0 || user > 2) {
-        cout << "Invalid choice!";
-        return 0;
-    }
+    toInvalid(user);
 
     comp = rand() % 2;
 
-    cout << "Computer chose: ";
-    if (comp == 0) cout << "Gofer\n";
-    else if (comp == 1) cout << "Sew\n";
- 
+    int result = toWin(user, comp, aWin);
 
-    if (user == aWin && comp== aWin)
-        cout << "Result: Draw!";
-    else if (user == aWin) 
-            
-        cout << "Result: You win!";
+    if (result == 0)
+        toDraw();
+    else if (result == 1)
+        cout << "Result: You win!\n";
     else
-        cout << "Result: You lose!";
+        cout << "Result: You lose!\n";
 
     return 0;
 }
-
 
