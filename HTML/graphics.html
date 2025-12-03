@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graphics</title>
+    </head>
+    <body>
+        <canvas id="myCanva" width="300" height="200"></canvas>
+        <svg width="200" height="200">
+            <circle
+                cx="100"
+                cy="100"
+                r="70"
+                stroke="green"
+                stroke width="10"
+                fill="red"
+            />
+
+        </svg>
+    </body>
+    <script>
+        var c= document.getElementById("myCanva");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(50,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+    </script>
+</html>
