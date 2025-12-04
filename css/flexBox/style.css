@@ -5,22 +5,32 @@
     flex-wrap: wrap;
     justify-content:space-between;
     height: 100px;
-    align-self: start;
+    align-items: center;
+
   
 }
 .c1{
     background-color: aqua;
-      width: 50px;
+      flex-basis: 50px;
+       order: 1;
+       align-self: start;
 }
 .c2{
     background-color: rgb(137, 223, 26);
-      width: 50px;
+    flex-basis: 50px;
+    order: 2;
+    align-self:center;
 }
 .c3{
     background-color: rgb(0, 47, 255);
-      width: 50px;
+   flex-basis: 50px;
+    order: 3;
+   align-self:self-end;
 }
 .c4{
     background-color: rgb(255, 153, 0);
-      width: 50px;
+     flex-basis: 50px;
+     order: 4;
+     align-self: stretch;
+     flex-shrink: 2;
 }
