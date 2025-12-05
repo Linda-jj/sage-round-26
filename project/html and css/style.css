@@ -86,7 +86,8 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+     height: 190px;
+    gap: 16px;
 }
 .inlineBox-txt{
     display: flex;
@@ -100,4 +101,16 @@ span{
     font-size: 16px;
     color: #717171;
     align-items: center;
+}
+.inlineBox-icon{
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+   
+    gap:32px;
+}
+.img-icon{
+    width: 48px;
+    height: 48px;
+    border-radius:8px;
 }
