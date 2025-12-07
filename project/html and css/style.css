@@ -197,6 +197,7 @@ span{
     /* align-items: center; */
     background-color: #F5F7FA;
     height: 433px;
+    width: 1140px;
 
 }
 .flex-boxImgBox{ 
@@ -286,6 +287,7 @@ span{
     /* align-items: center; */
     background-color: #F5F7FA;
     height: 433px;
+    width: 1140px;
 
 }
 .flex-box12{
@@ -422,9 +424,10 @@ height: 48px;
     background-color: #F5F7FA;
     box-shadow: #ABBED166;
     align-items: center;
-    border:  2px solid #717171;
+    border:  1px solid #717171;
     flex-wrap: wrap;
     box-shadow: #ABBED166;
+    top:50px
  
 }
 .h3Text{
@@ -477,10 +480,71 @@ height: 48px;
     background-color: #263238;
     color: #FFFFFF;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     height: 328px;
     width: 1140px;
     top: 4480px;
     position: absolute;
+    gap: 125px;
+    padding: 64px 165px;
+    align-items: center;
     
 }
+.last-oneBox{
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    width: 350px;
+    gap: 40px;
+
+}
+.last-oneicon{
+width: 192px;
+height: 30px;
+gap: 10px;
+}
+.last-onetxt{
+    font-size: 14px;
+    gap: 8px;
+}
+.last-oneicon1{
+    display: flex;
+    height: 32px;
+    width: 176px;
+    gap: 16px;
+}
+.lasticon{
+    width: 32px;
+    height: 32px;
+}
+.last-two{
+    gap: 24px;
+    width: 160px;
+    height: 200px;
+}
+.last-twoTitle{
+    font-size: 20px;
+    width: 160px;
+    height: 28px;
+}
+.last-twoP{
+    font-size: 14px;
+    color: #F5F7FA;
+    gap: 12px;
+}
+.last-three{
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 92px;
+    gap: 24px;
+}
+.form1{
+    background-color:#7e7a7a ,0.2%; 
+    /* color: #D9DBE1; */
+    height: 40px;
+    width: 255px;
+    border-radius: 8px;
+   align-self: self-start;
+    top:52px;
+} 
