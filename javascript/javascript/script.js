@@ -82,21 +82,100 @@ console.log(age?? "age is not found")
 let numbers= [1,2,3,56,678,9,67];
 
 for(let number of numbers){
-    console.log('the number', ": ", [number])
+    console.log("the number's", ":", [number])
 }
 
 
 for (let key in person){
-    console.log(key ,": ", person [key]);
+    console.log(key ,":", person [key]);
 }
 
+let day= 2;
+
+switch(day){
+ case 1:
+    console.log("Mon");
+ break;
+  case 2:
+    console.log("Tue");
+ break;
+  case 3:
+    console.log("wen");
+ break;
+  case 4:
+    console.log("thr");
+ break;
+  case 5:
+    console.log("fri");
+ break;
+  case 6:
+    console.log("sat");
+ break;
+  case 7:
+    console.log("sun");
+ break;
+ default:
+    console.log("day not founed")
+}
+
+let i=0;
+while(i<5){
+    console.log("while loop : " ,i)
+    i++;
+
+}
+for( let j=0; j<5;j++){
+    console.log("for loop : ",j);
+}
+
+const students=[
+    {id:1,name:"Elshday",gender:"M" ,score:[98,99,100]},
+    {id:2,name:"tsilot" ,gender:"M", score:[98,99,100]},
+    {id:3,name:"atsid" ,gender:"f" ,score:[98,99,100]},
+    {id:4,name:"lideya" ,gender:"f",score:[98,99,100]}
+
+]
+
+console.log(students[2].name)
+students[1].name="israle";
+console.log(students[1].name)
+console.log(students[0].score)
+
+students.forEach (function (student){
+console.log(student.name)
+student.score.forEach((s)=>{
+console.log(s);
+})
+
+})
+const h1=document.querySelector(".first-class");
+h1.style.color="red";
 
 
 
+const newDiv=document.createElement("div");
+newDiv.innerHTML="Hello from javascript."
+document.body.appendChild(newDiv);
+
+newDiv.remove();
+
+// document.getElementById("btn").addEventListener("click",(e)=>{
+//    h1.style.color="blue"
+// });
+
+$('#btn').click(function(){
+    h1.style.color="blue";
+})
 
 
+// $('#btn').hide()
+// $('#btn').slideUp()
 
-
+$('#box').css('width','200px')
+.css('height','200px')
+.css('background-color','pink')
+.slideUp(2000)
+.slideDown(2000)
 
 
 
