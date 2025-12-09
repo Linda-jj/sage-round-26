@@ -7,8 +7,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 84px;   
+    height: 84px; 
+    position: fixed;
+    /* overflow-x: scroll; */
+    background-color:#F5F7FA;  
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1000;
 }
+
 .logo-img{
     width: 154px;
     gap: 8px;
@@ -206,7 +213,7 @@ span{
 }
 .flex-boxImg{
     height: 328px;
-      background-color: #F5F7FA;
+    background-color: #F5F7FA;
 
 }
 .flex-box1{
@@ -377,6 +384,7 @@ height: 48px;
     width: 1140px;
     justify-content: space-between;
     position: relative;
+    display: inline-block;
 
 }
 .hero2Box-txt{
@@ -384,6 +392,8 @@ height: 48px;
     width: 810px;
     gap: 8px;
     text-align: center;
+    /* position: absolute; */
+    
 }
 .hero2Box-txtTitle{
     font-size: 36px;
@@ -427,7 +437,9 @@ height: 48px;
     border:  1px solid #717171;
     flex-wrap: wrap;
     box-shadow: #ABBED166;
-    top:50px
+    top:50px;
+    margin-top: -50px;
+    z-index: 100;
  
 }
 .h3Text{

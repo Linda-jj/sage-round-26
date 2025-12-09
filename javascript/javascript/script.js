@@ -78,3 +78,52 @@ console.log(zz)
 
 let age 
 console.log(age?? "age is not found")
+
+let numbers= [1,2,3,56,678,9,67];
+
+for(let number of numbers){
+    console.log('the number', ": ", [number])
+}
+
+
+for (let key in person){
+    console.log(key ,": ", person [key]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
