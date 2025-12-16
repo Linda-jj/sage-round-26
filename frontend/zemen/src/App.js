@@ -6,6 +6,7 @@ function App(){
     <h2>Test </h2>
     <Button name="Downland"/>
     <Button name="Test"/>
+    <div style={{'display':'flex'}}> 
     <Card img="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE="
     title="Eyes"
     description ="Beautiful, free images and photos that you can download and use for any project. Better than any royalty free or stock photos."
@@ -19,7 +20,7 @@ function App(){
     description ="FreDownload the best royalty free images from Shutterstock, including photos, vectors, and illustrations. Enjoy straightforward pricing and simple licensing.e stock photos & videos you can use everywhere. Browse millions of high-quality royalty free stock images & copyright free pictures."
     />
     
-  
+  </div>
   </div>
 }
 

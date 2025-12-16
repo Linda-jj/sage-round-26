@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.listColor{
+  background-color: aquamarine;
+}
+.btn{
+  background-color: green;
+  color: aliceblue;
+  margin: 5px;
+  padding: 5px;
+}
+.btn1{
+  background-color: rgb(225, 228, 225);
+  color: rgb(8, 125, 228);
+  margin: 5px;
+}
+.colorFro{
+ text-align: center;
+ color: blue;
+}
+.title{
+  font-size: 32px;
+  text-decoration: underline ;
+  
+}
+.form{
+  display: flex;
+  justify-content: center;
+
+}
+.formI{
+  background-color: antiquewhite;
+}
