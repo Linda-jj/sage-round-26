@@ -1,45 +1,52 @@
-import { useState } from "react"
+import { useState ,useRef,useEffect} from "react"
 
 
 export default function Adding() {
 const [num1,setNum1] =useState(0);
 const [num2,setNum2] =useState(0);
 const [count, setCount]=useState(0);
+const render=useRef(0)
 
 
 const sum =()=>{
-setCount= (Number(num1)+ Number(num2));
+setCount(Number(num1)+ Number(num2));
 }
 
+useEffect(()=>{
+    render.current++;
+})
 
 
-
-    return<>
+    return< div className="cal">
     <form>
-        <label for="num1">Number 1:</label>
-        <input
+        <label className="title"
+        for="num1">Number 1:</label>
+        <input className="title-box"
         id="num1"
         type="text"
         
-        placeholder="Please Enter your first Number"
+        placeholder="Enter your first Number"
          onChange={(e) => setNum1(e.target.value)}
         />
 
-        <label for="num2">Number 2:</label>
-        <input
+        <label className="title"
+         for="num2">Number 2:</label>
+        <input className="title-box"
         
         id="num2"
         type="text"
-        placeholder="Please Enter your second Number"
+        placeholder="Enter your second Number"
          onChange={(e) => setNum2(e.target.value)}
         />
     </form>
-    <button onClick={()=>{setCount(count)}}
+    <button className="btn"
+    onClick={sum}
  
 
     >Adding</button>
-    <h1> The Numbers Your addind is :{sum}</h1>
+    <h1> The Numbers Your adding is :{count}</h1>
+    <h2> Render No:{render.current} </h2>
 
     
-    </>
+    </div>
 }
