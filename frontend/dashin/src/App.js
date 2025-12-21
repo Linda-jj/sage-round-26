@@ -1,12 +1,12 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import{Link} from 'react-router-dom'
+
 import Home from './page/Home';
 import About from './page/About'
 import PageNotFound from './page/PageNotFound';
 import Products from './page/Products';
 import Layout from './page/Layout';
 import Dashbord from './page/Dashbord';
-import Product from './page/product';
+import Product from './page/Product';
 function App() {
   return (
     <div>
@@ -18,7 +18,7 @@ function App() {
       <Route path='products' element={<Products/>}/>
       <Route path='products/:item' element={<Product/>}/>
       </Route>
-      <Route />
+      
       <Route path='/dashbord' element={<Dashbord/>} />
       <Route path='*' element={<PageNotFound/>}/>
     </Routes>

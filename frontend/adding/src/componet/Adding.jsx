@@ -1,4 +1,4 @@
-import { useState ,useRef,useEffect} from "react"
+import { useState, useRef,useEffect} from "react"
 
 
 export default function Adding() {
@@ -11,6 +11,19 @@ const render=useRef(0)
 const sum =()=>{
 setCount(Number(num1)+ Number(num2));
 }
+ const sub=()=>{
+    setCount(Number(num1)-(num2));
+ }
+ const mul=()=>{
+    setCount(Number(num1)* Number(num2))
+ }
+ const div=()=>{
+    setCount(Number(num1)/Number(num2))
+ }
+//  const modu=()=>{
+//     setCount(Number(num1)%Number(num2))
+//  } 
+ 
 
 useEffect(()=>{
     render.current++;
@@ -38,15 +51,37 @@ useEffect(()=>{
         placeholder="Enter your second Number"
          onChange={(e) => setNum2(e.target.value)}
         />
-    </form>
-    <button className="btn"
-    onClick={sum}
- 
+        <div className="btnn1">
+  <div className="btnnn">
+  <input type="button" value='+' onClick={sum}/>
+  <input type="button" value='-' onClick={sub}/>
+  <input type="button" value='*' onClick={ mul}/>
+  <input type="button" value='/' onClick={div}/>
+</div>
+ <div className="btnnn">
+  <input type="button" value='%' />
+  <input type="button" value='AC' onClick={setCount('')}/>
 
-    >Adding</button>
+</div>
+</div>
+    </form>
+
+
     <h1> The Numbers Your adding is :{count}</h1>
     <h2> Render No:{render.current} </h2>
 
-    
     </div>
-}
+    
+    
+
+    };
+
+
+
+
+
+
+
+
+
+    
