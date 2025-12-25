@@ -1,15 +1,20 @@
-import { View, Text,Image ,TextInput,Button,ActivityIndicator, Switch} from 'react-native'
-
+import { View, Text,Image, ScrollView ,TextInput,Button,ActivityIndicator, Switch} from 'react-native'
+import{SafeAreaView, SafeAreaProvider} from 'react-native-safe-area-context'
 import { useState } from 'react'
+import Card from './Card'
 
 
 
 
 export default function App() {
 
-  const [x,setX]=useState(0)
-  return <View>
-    <Text>The value: {x}</Text>
+  const [x,setX]=useState(0);
+  const [oni,setOni]=useState(false);
+  return(<ScrollView>
+  <SafeAreaProvider>
+    <SafeAreaView>
+  <View>
+ <Text>The value: {x}</Text>
     <Text style={{textAlign:'center',margin:20,color:'#070707ff'}}>
       Hello!
     </Text>
@@ -26,8 +31,20 @@ export default function App() {
    console.log('the x value is x:',x)
   }}/>
   <ActivityIndicator size='large' color='red'/>
-  <Switch/>
+   <Text>{oni ? "ON":"OFF"}</Text> 
+  <Switch style={{backgroundColor:'yellow'}} value={oni} onValueChange={setOni}/>
+<Text style={{color:'hotpink',fontSize:20, textAlign:'center',textDecorationLine:'line-through',textShadowColor:'red'}}>Style Text Me </Text>
+  <View style={{flex:1 ,flexDirection:'row',justifyContent:'space-evenly'}}>
+  <Card/>
+  <Card/>
+  <Card/>
+  <Card/>
   </View>
-
+ 
+  </View>
+</SafeAreaView>
+</SafeAreaProvider>
+</ScrollView>
   
+);
 }
