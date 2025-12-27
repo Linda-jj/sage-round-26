@@ -42,7 +42,7 @@ return(<div>
             </div>    
     </div>
     <div className='continer-img' >
-<img className='img' src="photos/IMG_4943.JPG" alt='my Pic'/>
+<img className='img' src="\photos\photo_2025-12-23_20-44-03.jpg" alt='my Pic'/>
     </div>
 
 </div>

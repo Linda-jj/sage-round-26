@@ -138,3 +138,65 @@ color: black;
    color: black;
    font-weight:600;
  }
+ .Project-box{
+    background-color:rgba(255,255,255,.3);
+  background-size: contain;
+  background-position: center;
+   color: white;
+  border-radius: 20px;
+  height: 100vh;
+ display:flex;
+ flex-direction: column;
+ justify-content:center;
+ align-items: center;
+ }
+ .projectOne{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  width:500px;
+  height: 180px;
+ }
+ .projectOne:hover{
+  box-shadow: 0 0 10px white;
+ }
+
+ .projectOne img{
+  width: 200px;
+  margin: 10px;
+
+ }
+ .projectTwo{
+ display: flex;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid white;
+  margin: 10px;
+  width:500px;
+  border-radius: 10px; 
+ }
+ .projectTwo img{
+  width: 300px;
+  margin: 10px;
+ }
+ .projectTwo:hover{
+  box-shadow: 0 0 10px white;
+ }
+ .projectThree{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border: 1px solid white;
+  margin: 10px;
+  width:500px;
+  border-radius: 10px;
+ }
+ .projectThree img{
+   width: 200px;
+  margin: 10px;
+ }
+ .projectThree:hover{
+  box-shadow: 0 0 10px white;
+ }
