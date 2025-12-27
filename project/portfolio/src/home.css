@@ -1,0 +1,102 @@
+.home-page{
+ 
+  background-color:rgba(255,255,255,.3);
+  background-size: contain;
+  background-position: center;
+  color: white;
+  border-radius: 20px;
+  height: 100vh;
+  margin: 50px;
+}
+.header{
+display: flex;
+justify-content: space-between;
+color: white;
+width: 95%;
+align-items: center;
+z-index: 1000px;
+margin: 10px;
+}
+.logo{
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+.logo:hover{
+    text-shadow: 1px 1px white;
+}
+.link {
+  display: flex;
+  justify-content:space-evenly;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 400;
+ 
+}
+ .header-link{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+}
+.header-link:hover{
+border-color: white;
+font-weight: 700;
+}
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img{
+  height: 300px;
+  width: 400px;
+  /* object-fit: contain; */
+  border-radius:80%;
+  box-shadow: 0 0 10px white;
+transition: 0,5s;
+}
+.img:hover{
+contain:url(../public/photos/photo_2025-12-23_20-44-03.jpg);
+}
+.contact-socail{
+  display: flex;
+  gap: 50px;
+   align-items: center;
+ 
+}
+
+.contact-link{
+  text-decoration: none;
+color:black;
+padding: 10px;
+border:2px solid rgb(243, 242, 242);
+border-radius: 20px;
+background-color:white;
+box-shadow: 0 0 10px white;
+transition: 0.5s;
+}
+ .contact-link:hover{
+  background: transparent;
+  box-shadow: none;
+  color: white;
+}
+ .socal a{
+  text-decoration:none;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 5px;
+  transition: 0.5s;
+ }
+ .socal a:hover{
+  background: white;
+box-shadow: 0 0 10px white;
+color: black;
+ }
