@@ -1,55 +1,60 @@
 .home-page{
  
-  background-color:rgba(255,255,255,.3);
-  background-size: contain;
+  background-color:rgba(22, 22, 22, 1);
   background-position: center;
   color: white;
   border-radius: 20px;
+  height: 50px;
+  position:fixed;
+  padding: 15px;
+  width: 95%;
+
+}
+.hero{
+   background-color:rgba(58, 35, 35, 0.3);
+  background-size: contain;
+  background-position: center;
+   color: white;
+  border-radius: 20px;
   height: 100vh;
-  margin: 50px;
-  position: relative;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+
+
 }
 .header{
-display: flex;
-justify-content: space-between;
-color: white;
-width: 95%;
-align-items: center;
-z-index: 1000px;
-position: sticky;
-top: 0;
-margin: 10px;
+ display: flex;
+ justify-content: space-around;
+ align-items:center;
+ z-index: 500px;
+
+ top: 0;
+
 }
 .logo{
     font-weight: 700;
     font-size: 20px;
+    width: 200px;
     transition: 0.5s;
 
 }
 .logo:hover{
     text-shadow: 1px 1px white;
 }
-.link {
-  display: flex;
-  justify-content:space-evenly;
-  gap: 20px;
-  font-size: 16px;
-  font-weight: 400;
- 
-}
+
  .header-link{
-    display: flex;
-    flex-direction: row;
     color: white;
     text-decoration: none;
-    margin-left: 35px;
+    margin: 20px;
     border-bottom: 2px solid transparent;
     transition: .5s;
 }
 .header-link:hover{
-border-color: white;
-font-weight: 700;
+  text-decoration: underline;
+
 }
+
 .hero{
   display: flex;
   justify-content: center;
@@ -202,4 +207,17 @@ color: black;
  }
  .projectThree:hover{
   box-shadow: 0 0 10px white;
+ }
+ .footer{
+    background-color:rgba(14, 13, 13, 0.8);
+  background-size: contain;
+  background-position: center;
+   color: white;
+  border-radius: 20px;
+  height: 100vh;
+  margin: 20px;
+ display:flex;
+ flex-direction: column;
+ justify-content:center;
+ align-items: center; 
  }
