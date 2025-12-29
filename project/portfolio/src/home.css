@@ -7,6 +7,7 @@
   border-radius: 20px;
   height: 100vh;
   margin: 50px;
+  position: relative;
 }
 .header{
 display: flex;
@@ -15,6 +16,8 @@ color: white;
 width: 95%;
 align-items: center;
 z-index: 1000px;
+position: sticky;
+top: 0;
 margin: 10px;
 }
 .logo{
@@ -101,7 +104,7 @@ box-shadow: 0 0 10px white;
 color: black;
  }
  .case-continer{
-   background-color:rgba(255,255,255,.3);
+   background-color:rgba(14, 13, 13, 0.7);
   background-size: contain;
   background-position: center;
    color: white;
@@ -139,7 +142,7 @@ color: black;
    font-weight:600;
  }
  .Project-box{
-    background-color:rgba(255,255,255,.3);
+    background-color:rgba(14, 13, 13, 0.8);
   background-size: contain;
   background-position: center;
    color: white;

@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 background: url(../public/gradient-particle-wave-background_23-2150521668.avif) no-repeat center/cover ;
-
+position: relative;
 }
 
 code {

@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Project(){
 return(<div>
-<div className='Project-box'>
+<div className='Project-box' id='project'>
     <h2>Projects</h2>
 <div className='projectOne'>
     
