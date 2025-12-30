@@ -15,5 +15,14 @@ navigation.navigate('Detail')
          <Button  title="Africa" onPress={()=>{
             navigation.navigate('scrollView')
         }}/>
+                 <Button  title="Country" onPress={()=>{
+            navigation.navigate('FlatList')
+        }}/>
+                  <Button  title="Facth from API" onPress={()=>{
+            navigation.navigate('Facth')
+        }}/>
+              <Button  title="Photo" onPress={()=>{
+            navigation.navigate('Photo')
+        }}/>
     </View>
 }

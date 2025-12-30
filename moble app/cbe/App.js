@@ -4,6 +4,9 @@ import HomeScreen from "./screen/HomeScreen";
 import DetailScreen from "./screen/DetailScreeen";
 import ContactScreen from "./screen/ContactScreen";
 import scrollViewX from "./screen/ScrollViewX";
+import FlatListScreen from "./screen/FlatListScreen";
+import FatchDataFromApi from "./screen/FatchDataFromApi";
+import PhotoFromApi from "./screen/PhotofromApi";
 
 export default function App() {
   const Stack=createNativeStackNavigator()
@@ -13,6 +16,9 @@ export default function App() {
 <Stack.Screen name='Detail' component={DetailScreen}/>
 <Stack.Screen name="contact" component={ContactScreen}/>
 <Stack.Screen name="scrollView" component={scrollViewX}/>
+<Stack.Screen name="FlatList" component={FlatListScreen}/>
+<Stack.Screen name="Facth" component={FatchDataFromApi}/>
+<Stack.Screen name="Photo" component={PhotoFromApi}/>
     </Stack.Navigator>
 
   </NavigationContainer>
