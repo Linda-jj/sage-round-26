@@ -16,7 +16,7 @@ return<div className="first">
 </div>
 
             <div>
-               <button className="first-btn"  value="AC" onClick={e=>setValue('0')} >AC</button>
+               <button className="first-btn"  value="AC" onClick={e=>setValue('')} >AC</button>
                <button className="first-btn" value="DE" onClick={e=> setValue(value.slice(0,-1))} >DE</button>
              <button className="first-btn"  value='.' onClick={e=> setValue(value + e.target.value)}>.</button>
 
