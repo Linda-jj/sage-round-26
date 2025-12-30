@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Contact(){
 return(<div>
-<div className='footer'>
+<div className='footer' id='contact'>
 <div className='footer-box1'>
 <h2>Get in Touch</h2>
 <p>Intersted inworking together or having aquestion ?</p>
@@ -13,14 +13,14 @@ return(<div>
 <p>I'm always open to new opportunities and collaborations.</p>
 <p>Email: lideyafff@gmail.com
 </p>
-<p>Phone #:- </p>
+<p>Phone #:- +251923-829008 </p>
 </div>
 <div className='footer-box2'>
 <form>
     <label for='email'>Email</label>
     <input id='email' type='email'/>
     <label>Message</label>
-<textarea cols={30} rows={10}></textarea>
+<textarea cols={50} rows={10}></textarea>
 </form>
 </div>
 </div>

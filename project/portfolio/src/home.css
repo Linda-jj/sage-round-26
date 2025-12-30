@@ -216,8 +216,12 @@ color: black;
   border-radius: 20px;
   height: 100vh;
   margin: 20px;
- display:flex;
- flex-direction: column;
- justify-content:center;
- align-items: center; 
+  display:flex;
+  align-items: center;
+ justify-content: center;
+ 
+ }
+ .footer-box2 form{
+  display: flex;
+  flex-direction: column;
  }
