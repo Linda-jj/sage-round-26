@@ -11,7 +11,7 @@ return(<div>
 <p>Intersted inworking together or having aquestion ?</p>
 <p>Feel free to reach out </p>
 <p>I'm always open to new opportunities and collaborations.</p>
-<p>Email: lideyafff@gmail.com
+<p>Email:- lideyafff@gmail.com
 </p>
 <p>Phone #:- +251923-829008 </p>
 </div>
@@ -20,8 +20,10 @@ return(<div>
     <label for='email'>Email</label>
     <input id='email' type='email'/>
     <label>Message</label>
-<textarea cols={50} rows={10}></textarea>
+< textarea cols={50} rows={10} className='footer-box3'></textarea>
+
 </form>
+<button className='contact-link'>Submit</button>
 </div>
 </div>
 </div>)}

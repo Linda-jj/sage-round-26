@@ -1,15 +1,16 @@
 .home-page{
  
-  background-color:rgba(22, 22, 22, 1);
+  background:linear-gradient(to right,rgba(126, 120, 120, 1),rgba(44, 1, 1, 1));
   background-position: center;
   color: white;
   border-radius: 20px;
-  height: 50px;
+  height: auto;
   position:fixed;
   padding: 15px;
   width: 95%;
 
 }
+
 .hero{
    background-color:rgba(58, 35, 35, 0.3);
   background-size: contain;
@@ -52,8 +53,44 @@
 }
 .header-link:hover{
   text-decoration: underline;
-
+ text-shadow: 0 0 10px white;
 }
+.icon {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: black;
+  font-size: 32px;
+  display: none;
+}
+.icons{
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: black;
+  font-size: 32px;
+  display: none; 
+}
+.dropDown{
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  transform: translateY(-500px);
+  width: 100%;
+  height: auto;
+  background-color:rgba(155, 139, 139,0.8);
+  transition: 0.2s linear;
+}
+.dropDown a{
+  color: white;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 15px 0;
+}
+
 
 .hero{
   display: flex;
@@ -81,12 +118,14 @@ contain:url(../public/photos/photo_2025-12-23_20-44-03.jpg);
 .contact-link{
   text-decoration: none;
 color:black;
-padding: 10px;
+padding: 15px;
 border:2px solid rgb(243, 242, 242);
 border-radius: 20px;
 background-color:white;
 box-shadow: 0 0 10px white;
 transition: 0.5s;
+font-size: 16px;
+font-weight: 600;
 }
  .contact-link:hover{
   background: transparent;
@@ -203,10 +242,11 @@ color: black;
  }
  .projectThree img{
    width: 200px;
-  margin: 10px;
+  
  }
  .projectThree:hover{
   box-shadow: 0 0 10px white;
+  
  }
  .footer{
     background-color:rgba(14, 13, 13, 0.8);
@@ -220,8 +260,19 @@ color: black;
   align-items: center;
  justify-content: center;
  
+ 
  }
  .footer-box2 form{
   display: flex;
   flex-direction: column;
+  margin: 20px;
+ }
+ .footer-box2 input{
+  background-color: rgb(110, 109, 109);
+  font-size: 16px;
+  height: 30px;
+ }
+ .footer-box3{
+ background-color: rgb(110, 109, 109);
+  font-size: 16px;
  }

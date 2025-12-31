@@ -17,11 +17,15 @@ export default function Header() {
                     <a className='header-link' href='#'>Recent Work</a>
                     <a className='header-link' href='#contact'>Contact</a>
                 </div>
+                <i class="fa-sharp fa-solid fa-bars icons"></i>
             </div>
-
-            
-
-
+<div className='dropDown'>
+    <a href=''>Home</a>
+    <a href=''>Case Stubies</a>
+    <a href=''>Projects</a>
+    <a href=''>Contact</a>
+    <i class="fa-sharp fa-solid fa-x icon"></i>
+</div>
         </div>
     </div>
 

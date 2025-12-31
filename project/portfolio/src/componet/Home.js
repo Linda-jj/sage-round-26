@@ -9,7 +9,8 @@ export default function Home() {
                 <div className='detile'>
                     <h1>Hi ,I'M Lideya</h1>
                     <h2>A'M Web Developer</h2>
-                    <p>I am a passionate web developer who builds fast, responsive, and usee"-"friendly websites and Moblie Apps.
+                    <p>I am a passionate web developer who builds fast, responsive, and usee-friendly websites and 
+                        <br/>Moblie Apps.
                         <br />I enjoy turning ideas into real products using clean code and modern tech technologies.</p>
                     <h3 class="titleh3">What I focus on:</h3>
                     <ul>

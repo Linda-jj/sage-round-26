@@ -7,6 +7,67 @@ body {
   -moz-osx-font-smoothing: grayscale;
 background: url(../public/gradient-particle-wave-background_23-2150521668.avif) no-repeat center/cover ;
 position: relative;
+@media (max-width:704px) {
+  body{
+    overflow-y: visible;
+  }
+  .home-page{
+    background: hwb(213 83% 13%) ;
+    height: 10px;
+    
+  
+    
+  }
+  .logo h2{
+    position: absolute;
+    top:0;
+    left: 20px;
+    font-size: 18px;
+  }
+  .hero{
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .img{
+    width: 200px;
+    height: 200px;
+    margin: 10px ;
+    
+  }
+  .link {
+    display: none;
+  }
+  .icon{
+    color:rgb(12, 12, 12);
+    display: block;
+
+    
+  }
+  .icons{
+    color: #111111;
+  }
+  .case-continer{
+    font-size: 15px;
+    width: 100%;
+  }
+  .tools{
+    width: 800px;
+    overflow: hidden;
+  }
+  .tools-linkss{
+    font-size: 10px;
+  }
+  .footer-box1{
+    font-size: 14px;
+    margin: 10px;
+    
+  }
+}
+
 }
 
 code {

@@ -5,8 +5,9 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Case() {
     return (<div>
+ 
         <div className='case-continer' id="case">
-
+       
             <div className='tools'>
                 <h2>Tools</h2>
                 <p>I use modern tools like VS Code, Figma, Git, and GitHub to design and
