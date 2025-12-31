@@ -6,7 +6,7 @@ import ContactScreen from "./screen/ContactScreen";
 import scrollViewX from "./screen/ScrollViewX";
 import FlatListScreen from "./screen/FlatListScreen";
 import FatchDataFromApi from "./screen/FatchDataFromApi";
-import PhotoFromApi from "./screen/PhotofromApi";
+import PhotoFromApi from "./screen/PhotoFromApi";
 
 export default function App() {
   const Stack=createNativeStackNavigator()
