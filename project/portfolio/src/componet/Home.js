@@ -22,9 +22,9 @@ export default function Home() {
                     <div className='contact-socail'>
                         <a className='contact-link' href='#contact'>Contact Me</a>
                         <div className='socal'>
-                            <a href='#'><i class="fa-brands fa-github"></i></a>
-                            <a href='#'><i class="fa-brands fa-square-instagram"></i></a>
-                            <a href='#'><i class="fa-brands fa-linkedin"></i></a>
+                            <a href='#'><i className="fa-brands fa-github"></i></a>
+                            <a href='#'><i className="fa-brands fa-square-instagram"></i></a>
+                            <a href='#'><i className="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>

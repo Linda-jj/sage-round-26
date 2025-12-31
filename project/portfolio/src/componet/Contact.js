@@ -24,6 +24,11 @@ return(<div>
 
 </form>
 <button className='contact-link'>Submit</button>
+ <p className='date'>© {new Date().getFullYear()} My Portfolio L. All rights reserved.</p>
 </div>
+ <div >
+   
+    </div>   
 </div>
+  
 </div>)}
