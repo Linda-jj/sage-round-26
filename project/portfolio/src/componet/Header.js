@@ -21,9 +21,10 @@ export default function Header() {
             </div>
 <div style={open? {transform: "translateY(0px)"}:{transform: "translateY(-500px)"}} className='dropDown'>
     <a href=''>Home</a>
-    <a href=''>Case Stubies</a>
-    <a href=''>Projects</a>
-    <a href=''>Contact</a>
+    <a href='#case'>Case Stubies</a>
+    <a href='#project'>Projects</a>
+    <a href='#contact'>Contact</a>
+
     <i className="fa-sharp fa-solid fa-x icon" onClick={()=>{setOpen(!open)}}></i>
 </div>
         </div>

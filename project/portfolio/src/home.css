@@ -4,10 +4,10 @@
   background-position: center;
   color: white;
   border-radius: 20px;
-  height: auto;
+  
   position:fixed;
-  padding: 15px;
-  width: 95%;
+
+  width: 100%;
 
 }
 
@@ -63,6 +63,7 @@
   color: black;
   font-size: 32px;
   display: none;
+  align-self: center;
 }
 .icons{
   cursor: pointer;
@@ -71,7 +72,8 @@
   top: 10px;
   color: black;
   font-size: 32px;
-  display: none; 
+  display: none;
+  align-self: center; 
 }
 .dropDown{
   z-index: 100;

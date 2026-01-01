@@ -52,11 +52,21 @@ position: relative;
   }
   .case-continer{
     font-size: 15px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100vh;
+  
   }
   .tools{
-    width: 800px;
+    width: 300px;
+    height: 200px;
     overflow: hidden;
+   
+  }
+  .tools h2 p{
+font-size: 15px;
+padding: 5px;
   }
   .tools-linkss{
     font-size: 10px;
@@ -65,8 +75,12 @@ position: relative;
     font-size: 14px;
     margin: 10px;
     
+    
   }
-  
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 }
