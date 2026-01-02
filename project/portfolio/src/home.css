@@ -61,7 +61,7 @@
   right: 15px;
   top: 10px;
   color: black;
-  font-size: 32px;
+  font-size: 25px;
   display: none;
   align-self: center;
 }
@@ -70,8 +70,8 @@
   position: absolute;
   right: 15px;
   top: 10px;
-  color: black;
-  font-size: 32px;
+  color: rgb(240, 236, 236);
+  font-size: 30px;
   display: none;
   align-self: center; 
 }

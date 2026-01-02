@@ -12,7 +12,7 @@ export default function Header() {
                     <h2 >Portfolio L.</h2>
                 </div>
                 <div className='link' >
-                    <a className='header-link' href='#'>Home</a>
+                    <a className='header-link' href='#home'>Home</a>
                     <a className='header-link' href='#case'>Case Stubies</a>
                     <a className='header-link' href='#project'>Projects</a>
                     <a className='header-link' href='#contact'>Contact</a>
@@ -20,7 +20,7 @@ export default function Header() {
                 <i className="fa-sharp fa-solid fa-bars icons" onClick={()=>{setOpen(!open)}}></i>
             </div>
 <div style={open? {transform: "translateY(0px)"}:{transform: "translateY(-500px)"}} className='dropDown'>
-    <a href=''>Home</a>
+    <a href='#home'>Home</a>
     <a href='#case'>Case Stubies</a>
     <a href='#project'>Projects</a>
     <a href='#contact'>Contact</a>

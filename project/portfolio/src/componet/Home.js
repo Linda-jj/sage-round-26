@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function Home() {
     return (<div>
-            <div className='hero'>
+            <div className='hero' id='home'>
                 <div className='detile'>
                     <h1>Hi ,I'M Lideya</h1>
                     <h2>A'M Web Developer</h2>
