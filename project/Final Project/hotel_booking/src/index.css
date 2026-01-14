@@ -11,6 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+<<<<<<< HEAD
 .img-wrapper{
     display: flex;
     gap: 12px;
@@ -97,4 +98,10 @@ code {
 }
 .section-p{
   font-size: 15px;
+=======
+*{
+ margin: 0;
+ padding: 0;
+ position: relative;
+>>>>>>> b6a11955770b0eede323fae5621aa53de2aab0b2
 }
