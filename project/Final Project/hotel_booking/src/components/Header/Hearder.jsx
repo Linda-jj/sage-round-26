@@ -22,7 +22,7 @@ export default function Hearder() {
         <SwiperSlide>
           <div className={headerCSS.slide}>
             <img
-              src="/pic/photo_2026-01-13_12-13-34.jpg"
+              src="/pic/pexels-pixabay-164595.jpg"
               alt="slide1"
               className={headerCSS.img}
             />

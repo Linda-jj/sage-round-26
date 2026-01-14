@@ -12,7 +12,7 @@ import {
 
 import { Ionicons } from '@expo/vector-icons';
 import Checkbox from 'expo-checkbox';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SafeAreaProvider,SafeAreaView } from 'react-native-safe-area-context';
 import { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -87,6 +87,7 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
+      <SafeAreaView>
       <View style={styles.container}>
 
         {/* HEADER */}
@@ -147,6 +148,7 @@ export default function App() {
         </KeyboardAvoidingView>
 
       </View>
+      </SafeAreaView>
     </SafeAreaProvider>
   );
 }

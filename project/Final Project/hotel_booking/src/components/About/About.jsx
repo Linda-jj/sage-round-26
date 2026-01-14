@@ -1,12 +1,12 @@
 import React from "react";
-// import aboutCSS from'./About/About.module.css';
+import aboutCSS from'./../About/About.css';
 
 
 
 export default function About() {
 
     return (
-        <div className="section ">
+        <div className="section">
 
             <div className="img-wrapper">
                 <div className="img-left"></div>
