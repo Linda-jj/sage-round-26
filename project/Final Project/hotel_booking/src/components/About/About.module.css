@@ -1,0 +1,31 @@
+
+
+.about-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px  30px;
+    gap:10px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+   
+  
+}
+.cards p{
+    padding: 35px 20px;
+    border: 1px solid #9d7e54;
+    border-radius: 25px;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+}
+.cards p span{
+  font-size: 15px;
+}
+.about-content{
+    padding: 0;
+}
