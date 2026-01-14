@@ -1,17 +1,20 @@
-import About from './components/About/About'
-import './App.css';
-import Hearder from './components/Header/Hearder';
-import Nav_bar from './components/nav/Nav_bar';
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
+import Hearder from "./components/Header/Hearder";
+import NavBar from "./components/nav/NavBar";
+import Rooms from "./components/rooms/Rooms";
+
 
 function App() {
   return (
     <div >
 
+<NavBar/>
+<Hearder/>
+<Rooms/>
+<Contact/>
+<Footer/>
 
-
-    <Nav_bar/>
-    <Hearder/>
-         <About/>
 
     </div>
    
