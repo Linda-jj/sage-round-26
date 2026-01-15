@@ -9,6 +9,17 @@ export default function Rooms() {
         <div className="rooms-title">
           <h3>COME AND ENJOY</h3>
           <h1>Choose your perfect Room & Suites</h1>
+          <div>
+            <h1> Rooms and Suites </h1>
+            <p>
+              Our luxury rooms and suites are thoughtfully designed to offer an
+              atmosphere of refined comfort and timeless elegance. Each space
+              blends modern sophistication with subtle cultural accents,
+              creating a serene retreat for discerning travelers. From plush
+              bedding and spacious layouts to panoramic views and curated
+              interiors, every detail is crafted to elevate your stay.
+            </p>
+          </div>
         </div>
         <div className="rooms-continer">
           <div className="room">
