@@ -5,6 +5,8 @@ import NavBar from "./components/nav/NavBar";
 import Rooms from "./components/rooms/Rooms";
 import About from "./components/About/About";
 import Activity from "./components/Activity/Activity";
+import Book from "./components/Book/Book";
+
 
 
 
@@ -16,6 +18,8 @@ function App() {
 <Hearder/>
 <About/>
 <Rooms/>
+<Book/>
+
 <Activity/>
 <Contact/>
 <Footer/>
