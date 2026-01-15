@@ -1,7 +1,60 @@
 const express= require('express')
-const books= require("./data/books")
+let books=require('./data/books')
 
 const app=express()
+app.use(express.json())
+app.use((req,res,next)=>{
+    if(req.query.key !=11){
+        res.status(200).json({
+            success:"false",
+            massgge:"Key not found"
+
+        })
+    }else{
+        next()
+    }
+
+})
+
+app.post('/books',(req,res)=>{
+    const body=req.body
+    const id=books.length+1
+    body.id=id
+    console.log(body)
+    books.push(body)
+    res.status(201).json({
+       success: "true",
+       message:"you created new book"
+})
+}
+)
+
+app.put('/books/:id',(req,res)=>{
+    const id =req.params.id
+    const body=req.body
+    books= books.map((book)=>{
+        if(book.id== id){
+            return{...book,...body}
+        }else{
+            return book
+        }
+    })
+    res.status(200).json({
+        success:"true",
+        massgge:"edit book"
+    })
+})
+app.delete('/books/:id',(req,res)=>{
+    const id=req.params.id
+    books=books.filter((book)=>book.id!=id)
+    res.status(200).json({
+        success:"true",
+        massgge:"you delated"
+    })
+
+
+
+})
  
 app.get('/books',(req, res)=>{
     res.status(200).json(books)

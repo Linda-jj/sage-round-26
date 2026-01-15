@@ -28,6 +28,7 @@ export default function Contact() {
             <input
               className="input-cale"
               type="text"
+              // value={new Date()}
               placeholder="Select date"
               onFocus={(e) => (e.target.type = "date")}
               onBlur={(e) => {
