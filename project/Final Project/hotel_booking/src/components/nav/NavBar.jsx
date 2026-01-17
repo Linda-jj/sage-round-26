@@ -19,6 +19,9 @@ export default function Nav_bar() {
         <button>
           <i class="fa-solid fa-key"></i> BOOK NOW
         </button>
+        <button>
+          Resgister
+        </button>
 
         <i class="fa-solid fa-bars"></i>
       </div>
