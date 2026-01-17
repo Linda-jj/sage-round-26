@@ -5,15 +5,26 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "start": "node index.jsx",
     "dev": "nodemon index.jsx"
+=======
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+>>>>>>> cf4ad4a082e216e2e573158ff90c72569b296b21
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+<<<<<<< HEAD
     "express": "^5.2.1",
+=======
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.4",
+>>>>>>> cf4ad4a082e216e2e573158ff90c72569b296b21
     "nodemon": "^3.1.11"
   }
 }

@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Deluxe Family Room",
+    "imageurls": [
+      "https://comfybedss.co.uk/cdn/shop/files/LuxuryHotelZipandLinkOttomanBedSet_3.jpg?v=1751972742&width=1000",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUoXkEJRHmbqrX7E466KBicux9XUiNKk3zg&s"
+    ],
+    "rentperday": 200,
+    "type": "Deluxe",
+    "currentbookings": [],
+    "description": "Experience a serene stay in our beautifully designed Deluxe Family Room."
+  },
+  {
+    "name": "Deluxe Room",
+    "imageurls": [
+      "https://media.istockphoto.com/id/1050564510/photo/3d-rendering-beautiful-luxury-bedroom-suite-in-hotel-with-tv.jpg?s=612x612&w=0&k=20&c=ZYEso7dgPl889aYddhY2Fj3GOyuwqliHkbbT8pjl_iM=",
+      "https://media.istockphoto.com/id/627892060/photo/hotel-room-suite-with-view.jpg?s=612x612&w=0&k=20&c=YBwxnGH3MkOLLpBKCvWAD8F__T-ypznRUJ_N13Zb1cU="
+    ],
+    "rentperday": 300,
+    "type": "Deluxe",
+    "currentbookings": [],
+    "description": "Experience a serene stay in our beautifully designed Deluxe Room."
+  }
+]
