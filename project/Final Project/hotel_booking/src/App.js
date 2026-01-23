@@ -1,33 +1,45 @@
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import Hearder from "./components/Header/Hearder";
+import "./App.css";
 import NavBar from "./components/nav/NavBar";
-import Rooms from "./components/rooms/Rooms";
+import Footer from "./components/footer/Footer";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./screens/Home";
 import About from "./components/About/About";
 import Activity from "./components/Activity/Activity";
-import Book from "./components/Book/Book";
+import GusestsReview from "./components/GusteReview/GusetsReview";
+import Contact from "./components/contact/Contact";
+import HotellList from "./components/HotelList/HotellList";
+import HotelDetails from "./screens/HotelDetails";
+import RoomsContextProvider from "./contex/RoomsContext";
 
+export const backendUrl = "http://localhost:7000";
 
-
-
-function App() {
+export default function App() {
   return (
-    <div >
+    <RoomsContextProvider>
+      <NavBar />
 
-<NavBar/>
-<Hearder/>
-<About/>
-<Rooms/>
-<Book/>
+      <Routes>
+        {/* Home page with all sections */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <HotellList />
+              <About />
+              <Activity />
+              <GusestsReview />
+              <Contact />
+            </>
+          }
+        />
 
-<Activity/>
-<Contact/>
-<Footer/>
+        {/* Hotel details page alone */}
+        <Route path="/room/:id" element={<HotelDetails />} />
+      </Routes>
 
-
-    </div>
-   
+      <Footer />
+    </RoomsContextProvider>
   );
 }
-
-export default App;

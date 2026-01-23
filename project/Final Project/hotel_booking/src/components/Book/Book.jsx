@@ -1,118 +1,92 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "./../Book/Book.css";
+import Book2 from "./Book2/Book2";
+import { useNavigate } from "react-router-dom";
 
 export default function Book() {
-  const [days, setDays] = useState(2);
+  const [showBook, setShowBook] = useState(false);
+  const [days, setDays] = useState(1); // ✅ start from 1
   const pricePerDay = 200;
+
+  const navigate = useNavigate();
+
   return (
-    <div>
-      <div className="book-boxx">
-        <div className="hearder-book">
-          <h2>Lion of Sheba</h2>
-          <h1>Grand Hotel</h1>
-          <hr />
-        </div>
-        <div className="rounting">
-          <a href="">1</a>
-          <a href="">2</a>
-          <a href="">3</a>
-        </div>
-        <div className="book-box">
-          <div className="book-header">
-            <h1>Booking Information </h1>
-            <p>Please fill up the blank felds below</p>
-          </div>
-          <div className="book-continer">
-            <div>
-              <img src="/pic/lion-statue-entrance_1195984-13180.jpg" alt="" />
-              <p>Lion of sheba Grand Hotel</p>
-            </div>
-            <div className="book-box">
-              <form>
-                <label>How long you will stay?</label>
-                <div className="counter">
-                  <button onClick={() => setDays(Math.max(1, days - 1))}>
-                    −
-                  </button>
-
-                  <span>{days} Days</span>
-
-                  <button className="plus" onClick={() => setDays(days + 1)}>
-                    +
-                  </button>
-                </div>
-                <label>Pick a Date </label>
-                <input
-                  className="input-cale"
-                  type="text"
-                  placeholder="Select date"
-                  onFocus={(e) => (e.target.type = "date")}
-                  onBlur={(e) => {
-                    if (!e.target.value) e.target.type = "text";
-                  }}
-                />
-              </form>
-              <div className="price">
-                You will pay <strong>${days * pricePerDay} USD</strong> <br />
-                per {days} Days
-              </div>
-              <div className="book-btn">
-                <button className="book-btn1">Book Now</button>
-                <button className="book-btn2">Cancel</button>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div className="book-boxx">
+      <div className="hearder-book">
+        <h2>Lion of Sheba</h2>
+        <h1>Grand Hotel</h1>
+        <hr />
       </div>
-      <div className="book2">
+
+      <div className="book-box">
         <div className="book-header">
-          <h1>Payment </h1>
-          <p>Kindly follow the instruction blow</p>
+          <h1>Booking Information</h1>
+          <p>Please fill up the blank fields below</p>
         </div>
-        <div className="book-main">
-          <div className="book-info">
-            <p>
-              {" "}
-              {} Days at Lion of Sheba
-              <br />
-              Grand Hotel
-            </p>
-            <p>Total :${}</p>
-            <p>Initial Payment :${}</p>
+
+        <div className="book-continer">
+          <div>
+            <img
+              src="/pic/lion-statue-entrance_1195984-13180.jpg"
+              alt="Hotel"
+            />
+            <p>Lion of Sheba Grand Hotel</p>
           </div>
-          <div className="book-card">
-            <form>
-              <label>Card Number</label>
-              <input name="number" placeholder="payment card number" />
-              <label>Bank</label>
-              <input name="text" placeholder="Bank Name" />
-              <label>Exp Date</label>
-              <input name="number" placeholder="payment card number" />
-              <label>CVV</label>
-              <input name="number" placeholder="XXX" />
+
+          <div className="book-box">
+            <form onSubmit={(e) => e.preventDefault()}>
+              <label>How long will you stay?</label>
+
+              <div className="counter">
+                <button
+                  type="button"
+                  onClick={() => setDays((prev) => Math.max(1, prev - 1))}
+                >
+                  −
+                </button>
+
+                <span>{days} Days</span>
+
+                <button
+                  type="button"
+                  className="plus"
+                  onClick={() => setDays((prev) => prev + 1)}
+                >
+                  +
+                </button>
+              </div>
+
+              <label>Pick a Date</label>
+              <input className="input-cale" type="date" />
             </form>
+
+            <div className="price">
+              You will pay <strong>${days * pricePerDay} USD</strong> <br />
+              for {days} Days
+            </div>
+
+            <div className="book-btn">
+              <button
+                className="book-btn1"
+                type="button"
+                onClick={() => navigate("/book2")}
+              >
+                Book Now
+              </button>
+              <button
+                className="book-btn2"
+                type="button"
+                onClick={() => setShowBook(false)}
+              >
+                Cancel
+              </button>
+            </div>
           </div>
         </div>
-        <div className="book-btnn">
-          <button className="book-btn1">Book Now</button>
-          <button className="book-btn2">Cancel</button>
-        </div>
       </div>
-      {/* Final Booking */}
-      <div className="final-Booking">
-        <div className="book-header">
-          <h2>Yay! Payment Completed</h2>{" "}
-        </div>
 
-        <img src="/pic/images.png" alt="" />
-        <p>
-          Please check your email & phone Message.
-          <br />
-          We have sent all the information.
-        </p>
-        <button className="book-btn1">Go to Home</button>
-      </div>
+      {/* ✅ Render confirmation */}
+      {showBook && <Book2 />}
     </div>
   );
 }
