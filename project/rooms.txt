@@ -1,24 +1,38 @@
-[
+export const roomData = [
   {
-    "name": "Deluxe Family Room",
-    "imageurls": [
-      "https://comfybedss.co.uk/cdn/shop/files/LuxuryHotelZipandLinkOttomanBedSet_3.jpg?v=1751972742&width=1000",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUoXkEJRHmbqrX7E466KBicux9XUiNKk3zg&s"
-    ],
-    "rentperday": 200,
-    "type": "Deluxe",
-    "currentbookings": [],
-    "description": "Experience a serene stay in our beautifully designed Deluxe Family Room."
+    id: 1,
+    name: "Executive Room",
+    description:
+      "A modern executive room with a king-size bed, work desk, free Wi-Fi, air conditioning, and a city view. Perfect for business travelers.",
+    price: 120,
+    image:
+      "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
   },
   {
-    "name": "Deluxe Room",
-    "imageurls": [
-      "https://media.istockphoto.com/id/1050564510/photo/3d-rendering-beautiful-luxury-bedroom-suite-in-hotel-with-tv.jpg?s=612x612&w=0&k=20&c=ZYEso7dgPl889aYddhY2Fj3GOyuwqliHkbbT8pjl_iM=",
-      "https://media.istockphoto.com/id/627892060/photo/hotel-room-suite-with-view.jpg?s=612x612&w=0&k=20&c=YBwxnGH3MkOLLpBKCvWAD8F__T-ypznRUJ_N13Zb1cU="
-    ],
-    "rentperday": 300,
-    "type": "Deluxe",
-    "currentbookings": [],
-    "description": "Experience a serene stay in our beautifully designed Deluxe Room."
-  }
-]
+    id: 2,
+    name: "Presidential Suite",
+    description:
+      "A luxurious presidential suite featuring a spacious living area, premium furnishings, private balcony, and exclusive amenities.",
+    price: 350,
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+  },
+  {
+    id: 3,
+    name: "VIP Room",
+    description:
+      "An elegant VIP room designed for comfort and privacy, with modern décor, soft lighting, and a relaxing atmosphere.",
+    price: 200,
+    image:
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304",
+  },
+  {
+    id: 4,
+    name: "Double Room",
+    description:
+      "A comfortable double room with two beds, ideal for friends or family, equipped with a private bathroom and smart TV.",
+    price: 90,
+    image:
+      "https://images.unsplash.com/photo-1566665797739-1674de7a421a",
+  },
+];

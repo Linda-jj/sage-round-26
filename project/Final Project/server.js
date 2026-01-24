@@ -27,6 +27,10 @@ app.use("/api/user", userRouter);
 app.get("/", (req, res) => {
   res.send("API WORKING");
 });
+app.use((req, res, next) => {
+  console.log(req.method, req.url);
+  next();
+});
 // app.use("/api/rooms", roomsRoutes);
 // Middleware
 
